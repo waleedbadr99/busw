@@ -1,0 +1,852 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .container {
+    width: 1200px;
+    margin: auto;
+  }
+  .header .img-head {
+    background-image: url(https://jacquierobinsonphotography.files.wordpress.com/2013/06/pretty-night-sky-418.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .img-head .text-head {
+    text-align: center;
+  }
+  .header .img-head .text-head h1 {
+    color: #fff;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    padding: 6px;
+    font-size: 49px;
+    width: 580px;
+    margin: auto;
+  }
+  .header .img-head .text-head button {
+    outline: none;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 14px;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  .navbar {
+    background-color: #252f31;
+    color: #fff;
+  }
+  .navbar h2 {
+    flex-grow: 1;
+  }
+  .navbar h2 span {
+    color: #2ecc71;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .navbar ul li {
+    margin-right: 23px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .navbar ul li:hover {
+    color: #309847;
+  }
+  .navbar .but-text {
+    color: #309847;
+  }
+  .features {
+    margin-top: 30px;
+  }
+  .features .text-feat{
+    justify-content: space-evenly;
+    width: 32%;
+  }
+  .features .text-feat:not(:last-child) {
+    margin-right: 2%;
+  }
+  .about-me {
+    background-color: #F2F2F2;
+    margin-top: 30px;
+  }
+  .about-me .image-about {
+    width: 45%;
+  }
+  .about-me .image-about img  {
+    height: 100%;
+  }
+  .about-me .info {
+    width: 55%;
+  }
+  .about-me h2 {
+    margin: 20px 4px 0px 33px;
+  }
+  .about-me p {
+    margin: 20px 4px 0px 33px;
+  }
+  .info .box-icon {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .fas.fa-home {
+    color: #2DCC70;
+    position: absolute;
+    top: 32px;
+    left: 37px;
+    font-size: 31px;
+  }
+  .fas.fa-paint-brush {
+    color: #2DCC70;
+    position: absolute;
+    top: 32px;
+    right: 255px;
+    font-size: 31px;
+  }
+  .fas.fa-suitcase {
+    color: #2DCC70;
+    position: absolute;
+    left: 39px;
+    bottom: 38px;
+    font-size: 31px;
+  }
+  .fas.fa-globe {
+    color: #2DCC70;
+    position: absolute;
+    right: 255px;
+    bottom: 38px;
+    font-size: 31px;
+  }
+  .info .box-icon .icon-info {
+    width: 50%
+  }
+  .about-me .info .icon-info h3 {
+    margin: 20px 4px 0px 91px;
+  }
+  .about-me .info .icon-info p {
+    margin: 9px 4px 0px 93px;
+  }
+  .my-skills {
+    padding-bottom: 30px;
+  }
+  .my-skills .skills {
+    width: 50%;
+    padding-top: 30px;
+  }
+  .my-skills .progress {
+    width: 50%;
+    padding-top: 30px;
+  }
+  .my-skills .skills .p-text {
+    font-size: 16px;
+  }
+  .my-skills .skills button {
+    color: #2DCC70;
+    border: 3px solid #2DCC70;
+    padding: 7px 20px;
+    background: none;
+    font-weight: bold;
+    margin-bottom: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .my-skills .progress .technique {
+    margin-left: 25px;
+  }
+  .my-skills .progress .technique .box-progress {
+    background-color: #F2F2F2;
+    height: 27px;
+  }
+  .my-skills .progress .technique .box-progress div {
+    background: #2dcc70;
+    height: 27px;
+    line-height: 1.6;
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .my-skills .progress .technique .box-progress div:nth-child(3) {
+    width: 88%;
+  }
+  .resume {
+    padding-top: 35px;
+    background-color: #F2F2F2;
+    padding-bottom: 70px;
+  }
+  .resume  button {
+    color: #2DCC70;
+    border: 3px solid #2DCC70;
+    padding: 10px 25px;
+    background: none;
+    font-weight: bold;
+    margin-bottom: 17px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .my-education {
+    padding-top: 40px;
+  }
+  .my-education .right-tx {
+    width: 50%;
+    margin-right: 6%;
+  }
+  .my-education .left-tx {
+    width: 44%;
+  }
+  .left-tx .certificate {
+    padding-bottom: 40px;
+  
+  }
+  .my-education .left-tx p span {
+    color: #999;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .my-education .left-tx .numbar-left {
+    color: #fff;
+    background-color: #2dcc70;
+    padding: 6px 8px;
+  }
+  .my-education hr {
+    margin: 20px 0;
+    background-color: #999;
+    height: 1px;
+    border: 0;
+    width: 100%;
+  }
+  .testimonials {
+    padding-top: 30px;
+    padding-bottom: 55px;
+    background-color: #f2f2f2;
+  }
+  .testimonials .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .testimonials .box .box-on {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2DCC70;
+    cursor: pointer;
+    margin-right: 6px;
+  }
+  .testimonials .box .box-top  {
+    background-color: #2DCC70;
+  }
+  .testimonials .box .box-on:hover  {
+    background-color: #2DCC70;
+  }
+  .Portfolio {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .Portfolio .img-protgolio img  {
+    background-color: #fff;
+    border: 1px solid #CCC;
+    padding: 4px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .contact {
+    background-color: #252f31;
+    padding-bottom: 50px
+  }
+  .contact h2 {
+    color: #fff;
+  }
+  .contact .contact-rgiht {
+    width: 40%;
+    margin-right: 5%;
+    padding-top: 45px;
+  }
+  .contact .contact-left {
+    width: 55%;
+  }
+  .contact .contact-rgiht p span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 0;
+  }
+  .contact .contact-left .input-box {
+    padding-top: 42px;
+    padding-left: 50px;
+  }
+  .contact .contact-left .input-box label {
+    color: #d1d6da;
+  }
+  .contact .contact-left .input-box input {
+    outline: none;
+    border: none;
+    width: 440px;
+    height: 45px;
+    background-color: #4b5557;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    color: #d1d6da;
+    text-indent: 8px;
+  }
+  .contact .contact-left .input-box textarea{
+    display: block;
+    width: 440px;
+    height: 228px;
+    background-color: #4b5557;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    color: #d1d6da;
+    text-indent: 8px;
+  }
+  .contact .contact-left .input-box button {
+    background-color: #191e22;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 7px 24px;
+    cursor: pointer;
+  }
+  .footer {
+    background-color: #191e22;
+  }
+  .footer .icon-foteer {
+    color: #6a6e71;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+  }
+  .fab, .far {
+    font-weight: 400;
+    margin-right: 8px;
+  }
+  /*
+  
+  @media (max-width:767px)  {
+    .container {
+      width: 630px;
+      margin: auto;
+    }
+    .features .text-feat:not(:last-child) {
+      margin-right: 0%;
+    }
+    .features .text-feat {
+      text-align: center !important;
+    }
+    .navbar h2 {
+      text-align: center;
+    }
+    .navbar ul {
+      display: none;
+    }
+    .about-me .row {
+      display: block;
+    }
+    .about-me .image-about {
+      text-align: center;
+      width: 100%;
+    }
+    .about-me .info {
+      width: 100%;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 35px;
+    }
+    .fas.fa-paint-brush {
+      color: #2DCC70;
+      position: absolute;
+      top: 32px;
+      right: 235px;
+      font-size: 31px;
+    }
+    .fas.fa-globe {
+      color: #2DCC70;
+      position: absolute;
+      right: 240px;
+      bottom: 38px;
+      font-size: 31px;
+    }
+    .my-skills .row {
+      display: block;
+    }
+    .my-skills .skills {
+      width: 100%;
+      text-align: center;
+    }
+    .my-skills .progress {
+      width: 100%;
+      text-align: center;
+    }
+    .my-skills .progress .technique .box-progress {
+      width: 324px;
+      margin: auto;
+    }
+    .resume {
+      text-align: center;
+    }
+    .testimonials {
+      text-align: center;
+    }
+    .Portfolio {
+      text-align: center;
+    }
+    .my-education hr {
+      margin: 20px 0;
+      background-color: #999;
+      height: 1px;
+      border: 0;
+      width: 85%;
+      padding-left: 24px;
+    }
+    .hr-top {
+      width: 95% !important;
+    }
+    .Portfolio .img-protgolio img {
+      width: 75%;
+    }
+    .contact .row {
+      display: block;
+    }
+    .contact .contact-rgiht {
+      width: 100%;
+      text-align: center; 
+    }
+    .contact .contact-left {
+      width: 100%;
+      text-align: center; 
+    }
+    .contact .contact-left .input-box input {
+      margin: 20px auto;
+    }
+    .contact .contact-left .input-box textarea {
+      margin: 20px auto;
+    }
+    .col-xs-1 {
+      width: calc((1 * 100%) / 12);
+    }
+    .col-xs-2 {
+      width: calc((2 * 100%) / 12);
+    }
+    .col-xs-3 {
+      width: calc((3 * 100%) / 12);
+    }
+    .col-xs-4 {
+      width: calc((4 * 100%) / 12);
+    }
+    .col-xs-5 {
+      width: calc((5 * 100%) / 12);
+    }
+    .col-xs-6 {
+      width: calc((6 * 100%) / 12);
+    }
+    .col-xs-7 {
+      width: calc((7 * 100%) / 12);
+    }
+    .col-xs-8 {
+      width: calc((8 * 100%) / 12);
+    }
+    .col-xs-9 {
+      width: calc((9 * 100%) / 12);
+    }
+    .col-xs-10 {
+      width: calc((10 * 100%) / 12);
+    }
+    .col-xs-11 {
+      width: calc((11 * 100%) / 12);
+    }
+    .col-xs-12 {
+      width: calc((12 * 100%) / 12) !important;
+    }
+  }
+  */
+  @media (max-width:575px) {
+    .container {
+      width: 90%;
+      margin: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      overflow: hidden;
+  }
+  .header .img-head .text-head h1 {
+    width: 370px;
+}
+  .navbar h2 {
+    text-align: center;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .about-me .image-about {
+    display: contents;
+  }
+  .about-me .info {
+    width: 100%;
+    text-align: center;
+  }
+  .fas.fa-paint-brush {
+    position: absolute;
+    top: 32px;
+    right: 134px;
+    font-size: 31px;
+  }
+  .fas.fa-globe {
+    position: absolute;
+    right: 134px;
+    bottom: 111px;
+    font-size: 31px;
+}
+.fas.fa-suitcase {
+  color: #2DCC70;
+  position: absolute;
+  left: 39px;
+  bottom: 110px;
+  font-size: 31px;
+}
+.img-protgolio  {
+  margin: auto;
+}
+.contact .contact-left .input-box {
+  /padding-top: 0; 
+   padding-left: 0; 
+}
+.contact .contact-left .input-box input {
+  width: 371px;
+}
+.contact .contact-left .input-box textarea {
+  display: block;
+  width: 371px;
+}
+  }
+  @media (min-width:576px) and (max-width:767px) {
+    .container {
+      width: 540px;
+      margin: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  .header .img-head .text-head h1 {
+    width: 358px;
+    margin: auto;
+}
+.navbar h2 {
+  text-align: center;
+}
+.navbar ul {
+  display: none;
+}
+.about-me .image-about {
+  display: contents;
+}
+.about-me .info {
+  width: 100%;
+}
+.about-me h2 {
+  margin: 20px 4px 0px 33px;
+  text-align: center;
+}
+.fas.fa-paint-brush {
+  position: absolute;
+  top: 32px;
+  right: 194px;
+  font-size: 31px;
+}
+.fas.fa-globe {
+  position: absolute;
+  right: 193px;
+  bottom: 38px;
+  font-size: 31px;
+}
+.img-protgolio  {
+  margin: auto;
+}
+  }
+  .contact .contact-rgiht {
+    width: 100%;
+    text-align: center;
+}
+
+  @media (min-width:768px) and (max-width:991px) {
+    .container {
+      width: 730px;
+      margin: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .features .text-feat:not(:last-child) {
+      margin-right: 0%;
+    }
+    .features .text-feat {
+      text-align: center !important;
+    }
+    .navbar h2 {
+      text-align: center;
+    }
+    .navbar ul {
+      display: none;
+    }
+    .about-me .row {
+      display: block;
+    }
+    .about-me .image-about {
+      text-align: center;
+      width: 100%;
+    }
+    .about-me .info {
+      width: 100%;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 35px;
+    }
+    .fas.fa-paint-brush {
+      color: #2DCC70;
+      position: absolute;
+      top: 32px;
+      right: 283px;
+      font-size: 31px;
+    }
+    .fas.fa-globe {
+      color: #2DCC70;
+      position: absolute;
+      right: 283px;
+      bottom: 38px;
+      font-size: 31px;
+    }
+    .my-skills .progress .technique .box-progress {
+      width: 308px;
+    }
+    .resume {
+      text-align: center;
+    }
+    .testimonials {
+      text-align: center;
+    }
+    .Portfolio {
+      text-align: center;
+    }
+    .my-education hr {
+      margin: 20px 0;
+      background-color: #999;
+      height: 1px;
+      border: 0;
+      width: 85%;
+      padding-left: 24px;
+    }
+    .hr-top {
+      width: 93% !important;
+    }
+    .Portfolio .img-protgolio img {
+      width: 87%;
+    }
+    .contact .row {
+      display: block;
+    }
+    .contact .contact-rgiht {
+      width: 100%;
+      text-align: center; 
+    }
+    .contact .contact-left {
+      width: 100%;
+      text-align: center; 
+    }
+    .contact .contact-left .input-box input {
+      margin: 20px auto;
+    }
+    .contact .contact-left .input-box textarea {
+      margin: 20px auto;
+    }
+    .col-sm-1 {
+      width: calc((1 * 100%) / 12);
+    }
+    .col-sm-2 {
+      width: calc((2 * 100%) / 12);
+    }
+    .col-sm-3 {
+      width: calc((3 * 100%) / 12);
+    }
+    .col-sm-4 {
+      width: calc((4 * 100%) / 12);
+    }
+    .col-sm-5 {
+      width: calc((5 * 100%) / 12);
+    }
+    .col-sm-6 {
+      width: calc((6 * 100%) / 12) !important;
+    }
+    .col-sm-7 {
+      width: calc((7 * 100%) / 12);
+    }
+    .col-sm-8 {
+      width: calc((8 * 100%) / 12);
+    }
+    .col-sm-9 {
+      width: calc((9 * 100%) / 12);
+    }
+    .col-sm-10 {
+      width: calc((10 * 100%) / 12);
+    }
+    .col-sm-11 {
+      width: calc((11 * 100%) / 12);
+    }
+    .col-sm-12 {
+      width: calc((12 * 100%) / 12)!important;
+    }
+  }
+  @media (min-width:992px) and (max-width:1199px) {
+    .container {
+      width: 945px;
+      margin: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .fas.fa-paint-brush {
+      color: #2DCC70;
+      position: absolute;
+      top: 32px;
+      right: 190px;
+      font-size: 31px;
+    }
+    .fas.fa-globe {
+      color: #2DCC70;
+      position: absolute;
+      right: 190px;
+      bottom: 58px;
+      font-size: 31px;
+    }
+    .fas.fa-suitcase {
+      color: #2DCC70;
+      position: absolute;
+      left: 39px;
+      bottom: 58px;
+      font-size: 31px;
+    }
+    .my-skills .progress .technique .box-progress {
+      width: 432px;
+    }
+    .my-education hr {
+      margin: 20px 0;
+      background-color: #999;
+      height: 1px;
+      border: 0;
+      width: 90%;
+      padding-left: 24px;
+    }
+    .hr-top {
+      width: 95% !important;
+    }
+    .about-me .image-about {
+      width: 45%;
+      overflow: hidden;
+    }
+    .img-protgolio {
+      margin: auto;
+    }
+    .col-md-1 {
+      width: calc((1 * 100%) / 12);
+    }
+    .col-md-2 {
+      width: calc((2 * 100%) / 12);
+    }
+    .col-md-3 {
+      width: calc((3 * 100%) / 12);
+    }
+    .col-md-4 {
+      width: calc((4 * 100%) / 12);
+    }
+    .col-md-5 {
+      width: calc((5 * 100%) / 12);
+    }
+    .col-md-6 {
+      width: calc((6 * 100%) / 12);
+    }
+    .col-md-7 {
+      width: calc((7 * 100%) / 12);
+    }
+    .col-md-8 {
+      width: calc((8 * 100%) / 12);
+    }
+    .col-md-9 {
+      width: calc((9 * 100%) / 12);
+    }
+    .col-md-10 {
+      width: calc((10 * 100%) / 12);
+    }
+    .col-md-11 {
+      width: calc((11 * 100%) / 12);
+    }
+    .col-md-12 {
+      width: calc((12 * 100%) / 12);
+    }
+  }
+  @media (min-width:1200px) {
+    .col-1g-1 {
+      width: calc((1 * 100%) / 12);
+    }
+    .col-1g-2 {
+      width: calc((2 * 100%) / 12);
+    }
+    .col-1g-3 {
+      width: calc((3 * 100%) / 12);
+    }
+    .col-1g-4 {
+      width: calc((4 * 100%) / 12);
+    }
+    .col-1g-5 {
+      width: calc((5 * 100%) / 12);
+    }
+    .col-1g-6 {
+      width: calc((6 * 100%) / 12);
+    }
+    .col-1g-7 {
+      width: calc((7 * 100%) / 12);
+    }
+    .col-1g-8 {
+      width: calc((8 * 100%) / 12);
+    }
+    .col-1g-9 {
+      width: calc((9 * 100%) / 12);
+    }
+    .col-1g-10 {
+      width: calc((10 * 100%) / 12);
+    }
+    .col-1g-11 {
+      width: calc((11 * 100%) / 12);
+    }
+    .col-1g-12 {
+      width: calc((12 * 100%) / 12);
+    }
+  }
+  /* start framework*/
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .rowtow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h2,h3 {
+    color: #777;
+  }
+  p {
+    color: #888;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  /* end framework*/
+  
